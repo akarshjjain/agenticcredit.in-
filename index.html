@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>agenticredit.in</title>
+
+  <!-- EmailJS Browser SDK -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <style>
+    :root{
+      --bg:#f5f6f7;
+      --panel:#fff;
+      --ink:#1c2530;
+      --muted:#5b6672;
+      --line:#d5dade;
+      --accent:#1f4e5f;
+      --err:#a3322b;
+      --ok:#2d6a4f;
+    }
+
+    @media (prefers-color-scheme:dark){
+      :root{
+        --bg:#14181c;
+        --panel:#1b2026;
+        --ink:#e6e9ec;
+        --muted:#98a2ac;
+        --line:#2c343c;
+        --accent:#7fb3c4;
+        --err:#e58a83;
+        --ok:#7fc8a0;
+      }
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font:16px/1.55 "IBM Plex Sans",system-ui,-apple-system,
+           "Segoe UI",Roboto,sans-serif;
+    }
+
+    main{
+      max-width:620px;
+      margin:0 auto;
+      padding:64px 20px 80px;
+    }
+
+    h1{
+      font:600 clamp(28px,6vw,40px)/1.1
+           "IBM Plex Sans",system-ui,sans-serif;
+      letter-spacing:-.02em;
+      margin:0 0 20px;
+    }
+
+    .lead{
+      font-size:18px;
+      margin:0;
+    }
+
+    .sub{
+      color:var(--muted);
+      margin:4px 0 40px;
+    }
+
+    form{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:6px;
+      padding:28px;
+    }
+
+    .f{
+      margin-bottom:20px;
+    }
+
+    label,
+    legend{
+      display:block;
+      font-weight:500;
+      margin-bottom:6px;
+      padding:0;
+    }
+
+    fieldset{
+      border:0;
+      margin:0 0 20px;
+      padding:0;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=url],
+    textarea{
+      width:100%;
+      font:inherit;
+      color:var(--ink);
+      background:var(--bg);
+      border:1px solid var(--line);
+      border-radius:4px;
+      padding:10px 12px;
+    }
+
+    textarea{
+      min-height:110px;
+      resize:vertical;
+    }
+
+    :is(input,textarea,button):focus-visible{
+      outline:2px solid var(--accent);
+      outline-offset:2px;
+    }
+
+    .opt{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      padding:4px 0;
+      font-weight:400;
+    }
+
+    .opt input{
+      accent-color:var(--accent);
+      width:16px;
+      height:16px;
+      margin:0;
+    }
+
+    #site-wrap[hidden]{
+      display:none;
+    }
+
+    button{
+      width:100%;
+      font:inherit;
+      font-weight:500;
+      color:#fff;
+      background:var(--accent);
+      border:0;
+      border-radius:4px;
+      padding:12px 22px;
+      cursor:pointer;
+    }
+
+    @media (prefers-color-scheme:dark){
+      button{
+        color:#0f1418;
+      }
+    }
+
+    button:disabled{
+      opacity:.6;
+      cursor:default;
+    }
+
+    .hp{
+      position:absolute;
+      left:-9999px;
+      height:0;
+      overflow:hidden;
+    }
+
+    #status{
+      margin:16px 0 0;
+      min-height:1.5em;
+      font-size:15px;
+    }
+
+    #status.err{
+      color:var(--err);
+    }
+
+    #status.ok{
+      color:var(--ok);
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <h1>agenticredit.in</h1>
+
+  <p class="lead">
+    This domain is registered.
+  </p>
+
+  <p class="sub">
+    For domain-related inquiries, please submit your details below.
+  </p>
+
+  <form id="inq" novalidate>
+
+    <!-- Spam trap -->
+    <div class="hp" aria-hidden="true">
+      <label>
+        Leave blank
+        <input
+          type="text"
+          name="_gotcha"
+          tabindex="-1"
+          autocomplete="off">
+      </label>
+    </div>
+
+    <!-- Domain identifier -->
+    <input
+      type="hidden"
+      name="domain"
+      value="agenticredit.in">
+
+    <!-- Full Name -->
+    <div class="f">
+      <label for="name">
+        Full name
+      </label>
+
+      <input
+        id="name"
+        name="full_name"
+        type="text"
+        autocomplete="name"
+        required>
+    </div>
+
+    <!-- Organization -->
+    <div class="f">
+      <label for="org">
+        Company / organization name
+      </label>
+
+      <input
+        id="org"
+        name="organization"
+        type="text"
+        autocomplete="organization">
+    </div>
+
+    <!-- Email -->
+    <div class="f">
+      <label for="email">
+        Email
+      </label>
+
+      <input
+        id="email"
+        name="email"
+        type="email"
+        autocomplete="email"
+        required>
+    </div>
+
+    <!-- Phone -->
+    <div class="f">
+      <label for="phone">
+        Phone / WhatsApp
+      </label>
+
+      <input
+        id="phone"
+        name="phone"
+        type="tel"
+        autocomplete="tel">
+    </div>
+
+    <!-- Country -->
+    <div class="f">
+      <label for="country">
+        Country
+      </label>
+
+      <input
+        id="country"
+        name="country"
+        type="text"
+        autocomplete="country-name">
+    </div>
+
+    <!-- Purpose -->
+    <fieldset>
+
+      <legend>
+        What is the purpose of your inquiry?
+      </legend>
+
+      <label class="opt">
+        <input
+          type="radio"
+          name="purpose"
+          value="Business use"
+          required>
+        Business use
+      </label>
+
+      <label class="opt">
+        <input
+          type="radio"
+          name="purpose"
+          value="Partnership / acquisition inquiry">
+        Partnership / acquisition inquiry
+      </label>
+
+      <label class="opt">
+        <input
+          type="radio"
+          name="purpose"
+          value="Other">
+        Other
+      </label>
+
+    </fieldset>
+
+    <!-- Interest -->
+    <div class="f">
+
+      <label for="why">
+        Why are you interested in agenticredit.in?
+      </label>
+
+      <textarea
+        id="why"
+        name="interest"
+        required></textarea>
+
+    </div>
+
+    <!-- Organization representation -->
+    <fieldset>
+
+      <legend>
+        Are you contacting us on behalf of a company or organization?
+      </legend>
+
+      <label class="opt">
+        <input
+          type="radio"
+          name="on_behalf"
+          value="Yes">
+        Yes
+      </label>
+
+      <label class="opt">
+        <input
+          type="radio"
+          name="on_behalf"
+          value="No"
+          checked>
+        No
+      </label>
+
+      <div
+        id="site-wrap"
+        hidden
+        style="margin-top:10px">
+
+        <label for="site">
+          Company website
+        </label>
+
+        <input
+          id="site"
+          name="company_website"
+          type="url"
+          placeholder="https://">
+
+      </div>
+
+    </fieldset>
+
+    <!-- Preferred contact method -->
+    <fieldset>
+
+      <legend>
+        How can we contact you?
+      </legend>
+
+      <label class="opt">
+        <input
+          type="radio"
+          name="contact_method"
+          value="Email"
+          checked>
+        Email
+      </label>
+
+      <label class="opt">
+        <input
+          type="radio"
+          name="contact_method"
+          value="Phone">
+        Phone
+      </label>
+
+      <label class="opt">
+        <input
+          type="radio"
+          name="contact_method"
+          value="WhatsApp">
+        WhatsApp
+      </label>
+
+    </fieldset>
+
+    <!-- Submit -->
+    <button
+      type="submit"
+      id="send">
+      Send inquiry
+    </button>
+
+    <p
+      id="status"
+      role="status"
+      aria-live="polite">
+    </p>
+
+  </form>
+
+</main>
+
+
+<script>
+
+  /*
+   * ============================================================
+   * EMAILJS CONFIGURATION
+   * ============================================================
+   */
+
+  const EMAILJS_PUBLIC_KEY = "1Gbsp5nEthZWrGFRs";
+
+  const SERVICE_ID = "service_xkzn2bb";
+
+  const TEMPLATE_ID = "template_zgpb2q9";
+
+
+  /*
+   * Initialize EmailJS
+   */
+
+  emailjs.init({
+    publicKey: EMAILJS_PUBLIC_KEY
+  });
+
+
+  /*
+   * DOM elements
+   */
+
+  const form = document.getElementById("inq");
+
+  const statusEl = document.getElementById("status");
+
+  const btn = document.getElementById("send");
+
+  const siteWrap = document.getElementById("site-wrap");
+
+  const site = document.getElementById("site");
+
+
+  /*
+   * Company website visibility
+   */
+
+  form
+    .querySelectorAll('input[name="on_behalf"]')
+    .forEach(radio => {
+
+      radio.addEventListener("change", () => {
+
+        const selected =
+          form.querySelector(
+            'input[name="on_behalf"]:checked'
+          );
+
+        const yes =
+          selected && selected.value === "Yes";
+
+        siteWrap.hidden = !yes;
+
+        site.required = yes;
+
+        if (!yes) {
+          site.value = "";
+        }
+
+      });
+
+    });
+
+
+  /*
+   * Status message
+   */
+
+  function say(message, className) {
+
+    statusEl.textContent = message;
+
+    statusEl.className = className || "";
+
+  }
+
+
+  /*
+   * Submit form
+   */
+
+  form.addEventListener("submit", async event => {
+
+    event.preventDefault();
+
+
+    /*
+     * Honeypot spam protection
+     */
+
+    if (form._gotcha.value) {
+      return;
+    }
+
+
+    /*
+     * Browser validation
+     */
+
+    if (!form.checkValidity()) {
+
+      form.reportValidity();
+
+      say(
+        "Please complete the required fields.",
+        "err"
+      );
+
+      return;
+    }
+
+
+    /*
+     * Prevent accidental deployment
+     * without Public Key
+     */
+
+    if (
+      !EMAILJS_PUBLIC_KEY ||
+      EMAILJS_PUBLIC_KEY === "YOUR_EMAILJS_PUBLIC_KEY"
+    ) {
+
+      say(
+        "Email service is not configured yet.",
+        "err"
+      );
+
+      return;
+    }
+
+
+    /*
+     * Disable button while sending
+     */
+
+    btn.disabled = true;
+
+    btn.textContent = "Sending…";
+
+    say("");
+
+
+    try {
+
+      /*
+       * EmailJS automatically collects
+       * the form fields and sends them
+       * to the configured template.
+       */
+
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        form
+      );
+
+
+      /*
+       * Success
+       */
+
+      form.reset();
+
+      siteWrap.hidden = true;
+
+      site.required = false;
+
+      btn.textContent = "Send inquiry";
+
+      say(
+        "Inquiry received. We will review it and respond if appropriate.",
+        "ok"
+      );
+
+
+    } catch (error) {
+
+      console.error(
+        "EmailJS error:",
+        error
+      );
+
+      btn.textContent = "Send inquiry";
+
+      say(
+        "Your inquiry could not be sent. Please try again in a few minutes.",
+        "err"
+      );
+
+
+    } finally {
+
+      btn.disabled = false;
+
+    }
+
+  });
+
+</script>
+
+</body>
+</html>
